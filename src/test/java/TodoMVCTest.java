@@ -1,5 +1,6 @@
 import org.junit.Before;
 import org.junit.Test;
+import testconfig.BaseTest;
 
 import static pages.TodoMVCPage.*;
 
@@ -7,12 +8,13 @@ import static pages.TodoMVCPage.*;
  * Created by alex-macbook on 7/20/17.
  */
 
-public class TodoMVCTest {
+public class TodoMVCTest extends BaseTest {
 
     @Before
     public void openToDoMVC() {
         openApp();
     }
+
     @Test
     public void testTaskLifeCycle() {
 
